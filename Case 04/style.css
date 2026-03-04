@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+.circle-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: water-drop 1.5s ease-in-out infinite;
+}
+
+@keyframes water-drop {
+  from {
+    transform: scale(0);
+    border: 2px solid red;
+  }
+  to {
+    transform: scale(3);
+    border: 2px solid white;
+  }
+}

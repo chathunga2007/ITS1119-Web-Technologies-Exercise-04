@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.city-view-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+}
+
+.city-view-container > img {
+  width: 100vw;
+  height: 75vh;
+  object-fit: cover;
+  position: relative;
+}
+
+.city-view {
+  display: flex;
+  width: 300vw;
+  align-items: flex-end;
+}
+
+.city-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: go-back 8s ease-in-out 1s infinite;
+}
+
+#frame-02 {
+  left: 100vw;
+}
+
+#frame-03 {
+  left: 200vw;
+}
+
+.city-frame > img {
+  width: 100vw;
+  height: 25vh;
+}
+
+.car {
+  width: 20vw;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.car > img {
+  width: 100%;
+}
+
+.wheel > img {
+  width: 4vw;
+  position: absolute;
+  animation: wheel-rotation 8s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+img[alt="wheel-1"] {
+  top: 50%;
+  left: 8%;
+}
+
+img[alt="wheel-2"] {
+  top: 50%;
+  left: 70%;
+}
+
+@keyframes go-back {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200vw);
+  }
+}
+@keyframes wheel-rotation {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
