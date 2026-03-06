@@ -13,7 +13,7 @@ body {
 
 .box {
   width: 400px;
-  height: 50px;
+  height: 40px;
   background-color: blueviolet;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@ body {
   padding: 10px 20px;
   color: white;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 25px;
   transform: translateX(-360px);
   box-shadow: 5px 6px 10px 0 rgba(0, 0, 0, 1);
   transition: transform 1s ease-in-out;
@@ -46,8 +46,4 @@ body {
 
 #box-5:hover {
   transform: translateX(0);
-}
-
-.box > img {
-  width: 40px;
 }

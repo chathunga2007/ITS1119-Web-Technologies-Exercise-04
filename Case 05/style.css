@@ -20,7 +20,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  animation: photo-slider 20s ease-in-out infinite;
+  animation: photo-slider 15s ease-in-out infinite;
 }
 
 @keyframes photo-slider {
